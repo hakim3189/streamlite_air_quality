@@ -1,13 +1,10 @@
-# Library numpy untuk 
 import numpy as np
-# Library pandas untuk 
 import pandas as pd
-# Library matplotlib untuk 
 import matplotlib.pyplot as plt
-# Library seabord untuk 
 import seaborn as sn
+import streamlit as st
 
-sns.set(style='dark')
+
 
 Data_Aotizhongxin = pd.read_csv("PRSA_Data_Aotizhongxin_20130301-20170228.csv")
 Data_Changping = pd.read_csv("PRSA_Data_Changping_20130301-20170228.csv")
