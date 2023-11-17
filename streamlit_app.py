@@ -13,7 +13,19 @@ import matplotlib.pyplot as plt
 # Library seabord untuk 
 import seaborn as sn
 
-Data_combine = pd.read_csv("Main_data.csv")
+Data_Aotizhongxin = pd.read_csv("PRSA_Data_Aotizhongxin_20130301-20170228.csv")
+Data_Changping = pd.read_csv("PRSA_Data_Changping_20130301-20170228.csv")
+Data_Dingling = pd.read_csv("PRSA_Data_Dingling_20130301-20170228.csv")
+Data_Dongsi = pd.read_csv("PRSA_Data_Dongsi_20130301-20170228.csv")
+Data_Guanyuan = pd.read_csv("PRSA_Data_Guanyuan_20130301-20170228.csv")
+Data_Gucheng = pd.read_csv("PRSA_Data_Gucheng_20130301-20170228.csv")
+Data_Huairou = pd.read_csv("PRSA_Data_Huairou_20130301-20170228.csv")
+Data_Nongzhanguan = pd.read_csv("PRSA_Data_Nongzhanguan_20130301-20170228.csv")
+Data_Shunyi = pd.read_csv("PRSA_Data_Shunyi_20130301-20170228.csv")
+Data_Tiantan = pd.read_csv("PRSA_Data_Tiantan_20130301-20170228.csv")
+Data_Wanliu = pd.read_csv("PRSA_Data_Wanliu_20130301-20170228.csv")
+Data_Wanshouxigong = pd.read_csv("PRSA_Data_Wanshouxigong_20130301-20170228.csv")
+Data_combine = pd.concat([Data_Aotizhongxin,Data_Changping,Data_Dingling,Data_Dongsi,Data_Guanyuan,Data_Gucheng,Data_Huairou,Data_Nongzhanguan,Data_Shunyi,Data_Tiantan,Data_Wanliu,Data_Wanshouxigong])
 
 with st.sidebar:
     station = st.selectbox(
