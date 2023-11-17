@@ -1,8 +1,10 @@
+
+import streamlit as st
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sn
-import streamlit as st
+
 
 Data_Aotizhongxin = pd.read_csv("PRSA_Data_Aotizhongxin_20130301-20170228.csv")
 Data_Changping = pd.read_csv("PRSA_Data_Changping_20130301-20170228.csv")
