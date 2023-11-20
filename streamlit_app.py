@@ -44,8 +44,7 @@ with st.sidebar:
 selected_data = Data_combine[(Data_combine["station"] == station) & (Data_combine["year"] == year)& (Data_combine["month"] == month)& (Data_combine["day"] == day)]
 
 
-st.header('Hourly Trend Weather Indicator :sparkles:')
-#st.subheader('Daily Orders')
+st.header('Hourly Trend Air Quality Indicator :sparkles:')
 
 col1, col2 = st.columns(2)
 
